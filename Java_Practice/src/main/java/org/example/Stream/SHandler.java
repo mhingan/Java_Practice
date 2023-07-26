@@ -24,4 +24,15 @@ public class SHandler {
 
 
     }
+
+    public void exercise3() {
+        List<String> names = Arrays.asList("Mara","Ion","Vasile","Ionela","Mirela","Ana","Marius","Mirel","Ana","Marcela");
+        List<String> girls = names.stream()
+                .filter(name -> name.endsWith("a"))
+                .toList();
+
+        System.out.println("The following persons from list might be girls since the name is ending with 'a' : " + girls);
+
+
+    }
 }

@@ -13,5 +13,8 @@ public class Main {
 
         //exercise2
         sHandler.exercise2();
+
+        //exercise3
+        sHandler.exercise3();
     }
 }
