@@ -19,5 +19,13 @@ public class Main {
 
         //exercise4
         sHandler.exercise4();
+
+        //exercise5
+        sHandler.exercise5();
+
+        //exercise6
+        sHandler.exercise6();
+
+
     }
 }

@@ -1,8 +1,9 @@
 package org.example.Stream;
 
 
-
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,7 +28,7 @@ public class SHandler {
     }
 
     public void exercise3() {
-        List<String> names = Arrays.asList("Mara","Ion","Vasile","Ionela","Mirela","Ana","Marius","Mirel","Ana","Marcela");
+        List<String> names = Arrays.asList("Mara", "Ion", "Vasile", "Ionela", "Mirela", "Ana", "Marius", "Mirel", "Ana", "Marcela");
         List<String> girls = names.stream()
                 .filter(name -> name.endsWith("a"))
                 .toList();
@@ -49,4 +50,27 @@ public class SHandler {
                 .toList();
         System.out.println(sortedList);
     }
+
+    public void exercise5() {
+        //find the even numbers and square them
+        List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
+        List<Integer> evenNumber = integers.stream()
+                .filter(nr -> nr % 2 == 0)
+                .map(nr -> nr * nr)
+                .toList();
+
+        System.out.println(evenNumber);
+    }
+
+    public void exercise6() {
+        //sort numbers descending and print the first 3
+        List<Integer> integers = Arrays.asList(21, 45, 33, 12, 56, 98, 77, 34, 9);
+        List<Integer> sortedList = integers.stream()
+                .sorted(Comparator.reverseOrder())
+                .limit(3)
+                .toList();
+
+        System.out.println(sortedList);
+    }
+
 }
