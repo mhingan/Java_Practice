@@ -16,5 +16,8 @@ public class Main {
 
         //exercise3
         sHandler.exercise3();
+
+        //exercise4
+        sHandler.exercise4();
     }
 }
