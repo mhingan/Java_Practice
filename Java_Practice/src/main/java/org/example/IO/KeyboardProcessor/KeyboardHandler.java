@@ -4,7 +4,7 @@ import java.io.*;
 
 public class KeyboardHandler {
 
-    public void putDataTo(String fileName) throws IOException {
+    public  void putDataTo(String fileName) throws IOException {
         BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
         FileWriter fileWriter = new FileWriter(fileName);
 
