@@ -1,2 +1,3 @@
 # Java_Prctice
-fd
+
+A few exercises/ small projects in java
